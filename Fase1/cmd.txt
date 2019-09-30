@@ -1,0 +1,6 @@
+gcc -o project_server.out project_server.c -include jsmn.h jsmn.c my_protocol.h my_protocol.c
+./project_server.out 
+
+
+gcc -o project_client.out project_client.c -include jsmn.h jsmn.c my_protocol.h my_protocol.c
+./project_client.out localhost *nickname*

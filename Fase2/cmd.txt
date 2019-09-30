@@ -1,0 +1,8 @@
+gcc -o project_server.out project_server.c -include jsmn.h jsmn.c my_protocol.h my_protocol.c -lpthread
+./project_server.out 
+
+
+gcc -o project_client.out project_client.c -include jsmn.h jsmn.c my_protocol.h my_protocol.c
+
+gcc -o project_clientgtk.out project_clientgtk.c -Wall `pkg-config --cflags --libs gtk+-3.0` -export-dynamic -include jsmn.h jsmn.c my_protocol.h my_protocol.c
+./project_client.out localhost *nickname*

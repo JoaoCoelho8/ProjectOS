@@ -1,0 +1,25 @@
+﻿Message Types:
+
+
+0- registration		V
+
+1- broadcast		V
+
+2- private			V
+
+3- who is online 	V (todas as salas)
+
+4- on		V
+
+5- off		V
+
+6- create chat room		V	(server- cria nova sala, retira client da sala onde estava e insere-o na nova lista / client- envia só mensagem do tipo 6 
+7- join room			V	(server- retira client da sala onde este estava e insere-o na lista da nova sala / client- envia mensagem do tipo 7 com o id da sala no conteudo da mensagem)
+8- leave room			V	(server- enviar mensagem a informar q o cliente saiu e tira-lo da lista de clientes da sala / client- envia so uma mensagem do tipo 8.)
+
+9- show rooms			V	(server- percorrer todas as salas e concatenar no content da mensagem o id da sala e enviar / client- envia só uma mensagem do tipo 9 [como tipo 3] )
+
+10- show users			V	(server- envia todos os clientes, como no tipo 3, mas só da sala onde o cliente se encontra / client- envia só uma mensagem do tipo 10 [como tipo 3] )
+11- ban client from room (only admin)		F	(server- recebe mensagem do tipo 11 e verifica se é o admin. se for ban client senão devolve error a dizer q n tem permissao / client- envia mensagem do tipo 11 com o client a banir no conteudo
+Tipo 
+12- error			V	(server- constroi mensagem do tipo 12 com algum erro no conteudo da mensagem e envia ao cliente para o informar / client- só lê este tipo de mensagens, não escreve )
