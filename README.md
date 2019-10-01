@@ -1,3 +1,3 @@
 # ProjectSO
-Operating Systems course´s project
+Operating Systems course project
 <br>Projeto da disciplina "Sistemas Operativos"
