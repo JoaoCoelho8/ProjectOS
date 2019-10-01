@@ -1,2 +1,2 @@
 # ProjectSO
-Operating Systems course project
+"Operating Systems" course project
