@@ -1,2 +1,2 @@
-# ProjectSO
+# ProjectOS
 "Operating Systems" course project
